@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegIn"
+    android:background="@drawable/tlo">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/register"
+
+        android:text="ZALOGUJ SIĘ"
+        android:textSize="20dp"
+        android:textColor="#80FFFFFF"
+        android:layout_margin="20dp"
+
+        android:fontFamily="@font/roboto_regular"
+        android:onClick="logIn"
+
+
+        />
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/login"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:text="ZAŁÓŻ KONTO"
+        android:textSize="20dp"
+        android:layout_margin="20dp"
+        android:textColor="@color/white"
+
+        android:fontFamily="@font/roboto_regular"
+
+
+        />
+
+
+    <EditText
+        android:id="@+id/uName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="200dp"
+
+
+        android:background="#30ffffff"
+        android:hint="E-mail/Numer Telefonu"
+        android:textColorHint="#A6FFFFFF"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:drawablePadding="-20dp"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp"
+
+        />
+
+    <EditText
+        android:id="@+id/passw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/uName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="#30ffffff"
+        android:hint="Hasło"
+        android:textColorHint="#A6FFFFFF"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawablePadding="-20dp"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <EditText
+        android:id="@+id/passwRepeat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/passw"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:inputType="textPassword"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:background="#30ffffff"
+        android:hint="Powtórz Hasło"
+        android:textColorHint="#A6FFFFFF"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawablePadding="-20dp"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+
+    <TextView
+        android:id="@+id/lub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/passwRepeat"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:text="LUB"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:layout_marginTop="70dp"
+
+        android:fontFamily="@font/roboto_regular"
+
+
+
+        />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonGoogle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        app:layout_constraintTop_toBottomOf="@id/lub"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="50dp"
+        android:background="@drawable/gogle"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonFacebook"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+
+        app:layout_constraintTop_toBottomOf="@id/lub"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/fb"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
